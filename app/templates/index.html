@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+</head>
+
+<body>
+  <a-scene>
+    <a-asserts>
+      <img id="SkyTexture" src="../static/daytime.jpg">
+    </a-asserts>
+    <a-sky src="#SkyTexture"></a-sky>
+    
+    <a-box position="1 4 -6" animation="property:rotation; to:360 0 0; loop:true; dur:2000; easing:linear" color="red" height="2" width="1"></a-box>
+    
+    <a-box position="3.5 4 -6" animation="property:rotation; to:-360 0 0; loop:true; dur:2000; easing:linear" color="blue" height="2" width="1"></a-box>
+    
+    <a-cone position="1 1 -6" animation="property:rotation; to:0 0 360; loop:true; dur:2000; easing:linear" color="yellow" height="2" radius-bottom="0.5"></a-cone>
+    
+    <a-cylinder position="3.5 1 -6" animation="property:rotation; to:0 0 -360; loop:true; dur:2000; easing:linear" color="green" height="2" radius="0.5"></a-cylinder>
+  
+  </a-scene>
+  
+</body>
+
+</html>
